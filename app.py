@@ -36,6 +36,40 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
     backdrop-filter: blur(12px);
 }
 
+/* Sidebar — all text white */
+[data-testid="stSidebar"] * {
+    color: #ffffff !important;
+}
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3,
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] span,
+[data-testid="stSidebar"] div {
+    color: #ffffff !important;
+}
+/* Radio button labels */
+[data-testid="stSidebar"] [data-testid="stRadio"] label,
+[data-testid="stSidebar"] [data-testid="stRadio"] span {
+    color: #ffffff !important;
+}
+/* Multiselect & text input labels */
+[data-testid="stSidebar"] [data-testid="stWidgetLabel"] p,
+[data-testid="stSidebar"] .stTextInput label,
+[data-testid="stSidebar"] .stMultiSelect label {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+/* Sidebar markdown bold text */
+[data-testid="stSidebar"] strong {
+    color: #ffffff !important;
+}
+/* Selected multiselect tags keep their purple tint but stay readable */
+[data-testid="stSidebar"] [data-baseweb="tag"] span {
+    color: #ffffff !important;
+}
+
 .hero-title {
     font-size: 2.6rem;
     font-weight: 700;
@@ -128,7 +162,8 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
     margin-bottom: 0.8rem;
 }
 
-label { color: rgba(255,255,255,0.7) !important; }
+/* Main area labels */
+label { color: rgba(255,255,255,0.85) !important; }
 
 [data-baseweb="tab"] {
     color: rgba(255,255,255,0.55) !important;
